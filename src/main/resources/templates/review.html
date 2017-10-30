@@ -1,0 +1,24 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>A review</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+	</head>
+	<body>
+
+		<header>
+			<h1>A Dessert Review</h1>
+		</header>
+
+		<section>
+
+			<h2 th:text="${review.title}"></h2>
+			<img th:src="${review.imageUrl}" alt="A Picture of a Dessert"></img>
+			<h2 th:text="'Category: ' + ${review.category}"></h2>
+			<h2 th:text="'Content: ' + ${review.content}"></h2>
+			<h2 th:text="'Date: ' + ${review.date}"></h2>
+			<a href="http://localhost:8080/reviews">Back to home</a>
+		</section>
+
+	</body>
+	</html>

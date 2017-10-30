@@ -1,0 +1,42 @@
+	:root {
+		font-family: Cambria, Utopia, Serif;
+		font-size: 1.5rem;
+		background: PapayaWhip;
+		text-align: center;
+	}
+
+	h1 {
+		color: #00FF7F;
+	}
+
+	h2 a {
+		color: SlateBlue;
+	}
+
+	section {
+		color: SlateBlue;
+	}
+
+	a:hover {
+		color: #FF0000;
+		text-decoration: none;
+	}
+
+	a {
+		color: #FF7F50;
+	}
+
+	p {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+	#lowerimageleft {
+		max-width: 30%;
+		max-height: 30%;
+	}
+
+	#lowerimageright {
+		max-width: 30%;
+		max-height: 30%;
+	}

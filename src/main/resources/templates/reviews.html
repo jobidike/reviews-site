@@ -1,0 +1,36 @@
+	<!DOCTYPE HTML>
+
+	<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+	<title>Dessert Reviews</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Reviews Of Some Popular Desserts!</h1>
+		</header>
+		<section>
+			<p>
+				Here are four of the <em>most</em> popular desserts in the Midwest,
+				hopefully you agree with one of the picks!
+			</p>
+		</section>
+
+		<section th:each="review: ${reviews}">
+			<h2>
+				<a th:href="@{/review(id=${review.getId()})}"
+					th:text="${review.getTitle()}"></a>
+
+			</h2>
+		</section>
+		<section>
+				<img id="lowerimageleft" src="/images/desserts.jpg"
+				alt="Dessert Pictures"></img> <img id="lowerimageright"
+				src="/images/desserts1.jpg" alt="Dessert Pictures"></img>
+		</section>
+
+
+	</body>
+	</html>
